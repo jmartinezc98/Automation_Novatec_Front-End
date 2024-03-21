@@ -58,23 +58,23 @@ describe('QA_001 Registro de Usuario Nuevo', () => {
 })
 
 function generarCodigo(length) {
-  const caracteres = '01234567891020320147';
+  const caracteres = '01234567891020320147'
   let codigo = '';
 
   for (let i = 0; i < length; i++) {
-    const indice = Math.floor(Math.random() * caracteres.length);
-    codigo += caracteres.charAt(indice);
+    const indice = Math.floor(Math.random() * caracteres.length)
+    codigo += caracteres.charAt(indice)
   }
 
   return codigo;
 }
 
 function generarNombre(length) {
-  const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
   let nombre = '';
 
   for (let i = 0; i < length; i++) {
-    const indice = Math.floor(Math.random() * caracteres.length);
+    const indice = Math.floor(Math.random() * caracteres.length)
     nombre += caracteres.charAt(indice);
   }
 
